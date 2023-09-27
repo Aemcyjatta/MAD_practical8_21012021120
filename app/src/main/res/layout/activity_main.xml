@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAD_Alaram_Practical"
+                android:textSize="34dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/material1st"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                app:cardElevation="20dp"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:src="@drawable/img"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Create Alaram Time"
+                        android:textSize="25dp"
+                        app:layout_constraintStart_toStartOf="@id/imageView"
+                        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="By presenting buttons,Alaram can be created and cancelled."
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="@id/textView1"
+                        app:layout_constraintTop_toBottomOf="@id/textView1"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Check Current Time lokking below real digital clock."
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="@id/textView2"
+                        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:45:17 PM Aug,14 2022"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:layout_marginStart="61dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/textView3"
+                        app:layout_constraintTop_toBottomOf="@id/textView3"
+                        />
+                    <!--    <Button-->
+                    <!--        android:layout_width="wrap_content"-->
+                    <!--        android:layout_height="wrap_content"-->
+                    <!--        android:layout_marginTop="10dp"-->
+                    <!--        app:layout_constraintStart_toStartOf="@id/textView3"-->
+                    <!--        app:layout_constraintTop_toBottomOf="@id/textView4"-->
+                    <!--        android:text="Create Alaram"/>-->
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:icon="@drawable/baseline_access_alarm_24"
+                        app:layout_constraintStart_toStartOf="@id/textView3"
+                        app:layout_constraintTop_toBottomOf="@id/textView4"
+                        android:text="Create Alaram">
+
+                    </com.google.android.material.button.MaterialButton>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--Second blog start-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/material2nd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/material1st">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraint1st"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/img_1"
+                        app:layout_constraintStart_toStartOf="@id/material2nd"
+                        app:layout_constraintTop_toBottomOf="@id/material2nd"
+                        tools:ignore="NotSibling" />
+
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="82dp"
+                        android:text="Set Alaram Time :"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/imageView2"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:47:00 PM"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/textView5"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancle Alaram"
+                        app:icon="@drawable/baseline_alarm_off_24"
+                        app:layout_constraintStart_toStartOf="@id/imageView2"
+                        app:layout_constraintTop_toBottomOf="@id/textView6">
+
+                    </com.google.android.material.button.MaterialButton>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <!--Second Blog End-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
